@@ -1,0 +1,17 @@
+li{
+    list-style-type: none;
+    padding: 5px 5px;
+    font-size: 15px;
+    letter-spacing: 3px;
+    cursor: pointer;
+    color: rgb(54, 54, 54);
+    text-transform: uppercase;
+}
+li:hover{
+   background-color: rgba(65, 105, 225, 0.233);
+}
+.select{
+    background-color: rgba(65, 105, 225, 0.233);
+    color: indigo;
+    margin-right: 2px solid rgba(65, 105, 225, 0.795);
+}

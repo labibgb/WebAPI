@@ -1,0 +1,4 @@
+<ul>
+    <li  *ngFor="let post of service.list" (click)="onLoad(post.postID)" routerLink="/home/{{post.postID}}" 
+    [className]="post.postID == curUrl ? 'select' : ''">{{post.title}}</li>
+</ul>

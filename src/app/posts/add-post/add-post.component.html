@@ -1,0 +1,17 @@
+<form autocomplete="off" novalidate #form="ngForm" (submit)="onSubmit(form)">
+    <input type="hidden" name="postID" [value]="service.formData.postID">
+    <div class="form-group">
+        <label >TITLE</label>
+        <input type="text" class="form-control form-control-lg" name="title" placeholder="Write your post title" 
+        #title="ngModel" [(ngModel)]="service.formData.title" required>
+    </div>
+    <div class="form-group">
+        <label>CONTENT</label>
+        <angular-editor [placeholder]="'Write your content'" name="content" #post="ngModel"
+        [(ngModel)]="service.formData.content"
+        required></angular-editor>
+    </div>
+    <div class="form-group">
+        <button class="btn btn-primary btn-lg btn-block" type="submit" [disabled]="form.invalid"> Submit </button>
+    </div>
+</form>

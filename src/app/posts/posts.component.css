@@ -1,0 +1,10 @@
+.post{
+    padding: 15px;
+}
+tbody tr{
+    cursor: pointer;
+    
+}
+tbody tr:hover{
+    background-color: rgb(216, 216, 216);
+}

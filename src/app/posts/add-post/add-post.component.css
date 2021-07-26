@@ -1,0 +1,15 @@
+.form-group label{
+    color: gray;
+}
+.form-group input, angular-editor{
+    font-weight: 500;
+    font-size: small;
+}
+.form-group input::placeholder, angular-editor::placeholder{
+    color: rgb(100, 100, 100);
+    font-weight: 300;
+    font-size: small;
+}
+input.invalid, angular-editor.invalid{
+    border-color: red;
+}
